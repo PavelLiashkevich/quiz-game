@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/reset.css">
+	<link rel="stylesheet" href="./style/style.css">
+	<title>My Test</title>
+</head>
+<body>
+	<div class="test_over_modal">
+		<div class="content">
+			<h1>Хороший результат!</h1>
+			<p>Ты ответил на 
+				<span id="correct_answer"></span> из
+				<span id="number_of_all_question2"></span> вопроса
+			</p>
+			<button id="btn_try_again">Попробуй снова</button>
+		</div>
+	</div>
+	<div class="test_container">
+		<div class="question_number">
+			<h3>Вопрос
+				<span id="number_of_question"></span>
+				из
+				<span id="number_of_all_question"></span>
+			</h3>
+		</div>
+		<div id="question"></div>
+		<div class="options">
+			<div data-id="0" class="option option1"></div>
+			<div data-id="1" class="option option2"></div>
+			<div data-id="2" class="option option3"></div>
+			<div data-id="3" class="option option4"></div>
+		</div>
+		<div class="button">
+			<button id="btn_next">Next</button>
+		</div>
+		<div id="answers_tracker">
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
